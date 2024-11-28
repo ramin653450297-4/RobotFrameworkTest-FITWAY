@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.5 on win32)" generated="2024-10-22T00:17:51.207351" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Signup" source="C:\TestFitWay-main\tests\test_signup.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-10-22T00:17:51.466304" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
+<arg>${baseUrl}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-22T00:17:51.465293" elapsed="2.625432"/>
+</kw>
+<test id="s1-t1" name="As a user, I want to signup successfully with valid data" line="11">
+<kw name="When user signup to FIT WAY platform with ${signup_email} and ${signup_name} and ${signup_lastname} and ${signup_phone} and ${signup_password}" owner="Signup" source_name="user signup to FIT WAY platform with ${signup_email} and ${signup_name} and ${signup_lastname} and ${signup_phone} and ${signup_password}">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-22T00:17:54.093973" level="INFO">Clicking element 'xpath=//a[text()="สมัครสมาชิก"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-22T00:17:54.092733" elapsed="0.110974"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-22T00:17:54.092733" elapsed="0.110974"/>
+</kw>
+<arg>xpath=//a[text()="สมัครสมาชิก"]</arg>
+<status status="PASS" start="2024-10-22T00:17:54.092733" elapsed="0.110974"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-22T00:17:54.205721" level="INFO">Typing text 'ILOVEU@gmail.com' into text field 'name=email'.</msg>
+<msg time="2024-10-22T00:17:54.851131" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-22T00:17:54.851131" level="FAIL">Element with locator 'name=email' not found.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-10-22T00:17:54.204720" elapsed="0.647791">Element with locator 'name=email' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-22T00:17:56.853811" level="INFO">Typing text 'ILOVEU@gmail.com' into text field 'name=email'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-22T00:17:56.852793" elapsed="0.136305"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-22T00:17:54.204720" elapsed="2.785391"/>
+</kw>
+<arg>name=email</arg>
+<arg>${signup_email}</arg>
+<status status="PASS" start="2024-10-22T00:17:54.204720" elapsed="2.785391"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-22T00:17:56.991111" level="INFO">Typing text 'Test123' into text field 'name=password'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-22T00:17:56.991111" elapsed="0.096425"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-22T00:17:56.990111" elapsed="0.097425"/>
+</kw>
+<arg>name=password</arg>
+<arg>${signup_password}</arg>
+<status status="PASS" start="2024-10-22T00:17:56.990111" elapsed="0.097425"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-22T00:17:57.089548" level="INFO">Typing text 'Test' into text field 'name=firstName'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-22T00:17:57.089548" elapsed="0.084061"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-22T00:17:57.088574" elapsed="0.085035"/>
+</kw>
+<arg>name=firstName</arg>
+<arg>${signup_name}</arg>
+<status status="PASS" start="2024-10-22T00:17:57.088574" elapsed="0.085035"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-22T00:17:57.174645" level="INFO">Typing text 'User' into text field 'name=lastName'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-22T00:17:57.174645" elapsed="0.082646"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-22T00:17:57.174645" elapsed="0.082646"/>
+</kw>
+<arg>name=lastName</arg>
+<arg>${signup_lastname}</arg>
+<status status="PASS" start="2024-10-22T00:17:57.173609" elapsed="0.083682"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-22T00:17:57.258291" level="INFO">Typing text '0912345678' into text field 'name=phoneNumber'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-22T00:17:57.258291" elapsed="0.099332"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-22T00:17:57.258291" elapsed="0.099332"/>
+</kw>
+<arg>name=phoneNumber</arg>
+<arg>${signup_phone}</arg>
+<status status="PASS" start="2024-10-22T00:17:57.257291" elapsed="0.100332"/>
+</kw>
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-22T00:17:57.358634" level="INFO">Clicking element 'xpath=//button[@type="submit" and text()="สมัครสมาชิก"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-22T00:17:57.358634" elapsed="0.056506"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-22T00:17:57.358634" elapsed="0.056506"/>
+</kw>
+<arg>xpath=//button[@type="submit" and text()="สมัครสมาชิก"]</arg>
+<status status="PASS" start="2024-10-22T00:17:57.357623" elapsed="0.057517"/>
+</kw>
+<status status="PASS" start="2024-10-22T00:17:54.091737" elapsed="3.323403"/>
+</kw>
+<kw name="Then FIT WAY should display message as &quot;สมัครสมาชิกสำเร็จ!&quot;" owner="Signup" source_name="FIT WAY should display message as &quot;${expected_message}&quot;">
+<kw name="Wait until page contains element then verify text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-10-22T00:17:57.872736" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-22T00:17:57.872736" level="FAIL">Page should have contained text 'สมัครสมาชิกสำเร็จ!' but did not.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2024-10-22T00:17:57.419298" elapsed="0.454437">Page should have contained text 'สมัครสมาชิกสำเร็จ!' but did not.</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-10-22T00:17:59.885168" level="INFO">Current page contains text 'สมัครสมาชิกสำเร็จ!'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-10-22T00:17:59.874305" elapsed="0.010863"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Page Should Contain</arg>
+<arg>${expected_text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-22T00:17:57.417213" elapsed="2.467955"/>
+</kw>
+<arg>${expected_message}</arg>
+<status status="PASS" start="2024-10-22T00:17:57.417213" elapsed="2.467955"/>
+</kw>
+<status status="PASS" start="2024-10-22T00:17:57.416174" elapsed="2.468994"/>
+</kw>
+<status status="PASS" start="2024-10-22T00:17:54.090725" elapsed="5.794443"/>
+</test>
+<test id="s1-t2" name="As a User, I Want To Signup Failed With Duplicate Email" line="15">
+<kw name="When User Signup Failed To FIT WAY Platform With ${signup_email} and ${signup_name} and ${signup_lastname} and ${signup_phone} and ${signup_password}" owner="Signup" source_name="User Signup Failed To FIT WAY Platform With ${signup_email} and ${signup_name} and ${signup_lastname} and ${signup_phone} and ${signup_password}">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-22T00:17:59.888589" level="INFO">Clicking element 'xpath=//a[text()="สมัครสมาชิก"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-22T00:17:59.888589" elapsed="0.053833"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-22T00:17:59.888589" elapsed="0.053833"/>
+</kw>
+<arg>xpath=//a[text()="สมัครสมาชิก"]</arg>
+<status status="PASS" start="2024-10-22T00:17:59.887250" elapsed="0.055172"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-22T00:17:59.943433" level="INFO">Typing text 'ILOVEU@gmail.com' into text field 'name=email'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-22T00:17:59.943433" elapsed="0.143278"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-22T00:17:59.943433" elapsed="0.143278"/>
+</kw>
+<arg>name=email</arg>
+<arg>${signup_email}</arg>
+<status status="PASS" start="2024-10-22T00:17:59.943433" elapsed="0.143278"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-22T00:18:00.087711" level="INFO">Typing text 'Test123' into text field 'name=password'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-22T00:18:00.087711" elapsed="0.091953"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-22T00:18:00.087711" elapsed="0.092980"/>
+</kw>
+<arg>name=password</arg>
+<arg>${signup_password}</arg>
+<status status="PASS" start="2024-10-22T00:18:00.087711" elapsed="0.092980"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-22T00:18:00.180691" level="INFO">Typing text 'Test' into text field 'name=firstName'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-22T00:18:00.180691" elapsed="0.085930"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-22T00:18:00.180691" elapsed="0.085930"/>
+</kw>
+<arg>name=firstName</arg>
+<arg>${signup_name}</arg>
+<status status="PASS" start="2024-10-22T00:18:00.180691" elapsed="0.085930"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-22T00:18:00.267621" level="INFO">Typing text 'User' into text field 'name=lastName'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-22T00:18:00.267621" elapsed="0.081710"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-22T00:18:00.266621" elapsed="0.082710"/>
+</kw>
+<arg>name=lastName</arg>
+<arg>${signup_lastname}</arg>
+<status status="PASS" start="2024-10-22T00:18:00.266621" elapsed="0.082710"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-22T00:18:00.351356" level="INFO">Typing text '0912345678' into text field 'name=phoneNumber'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-22T00:18:00.350357" elapsed="0.104118"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-22T00:18:00.350357" elapsed="0.105144"/>
+</kw>
+<arg>name=phoneNumber</arg>
+<arg>${signup_phone}</arg>
+<status status="PASS" start="2024-10-22T00:18:00.350357" elapsed="0.105144"/>
+</kw>
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-22T00:18:00.456544" level="INFO">Clicking element 'xpath=//button[@type="submit" and text()="สมัครสมาชิก"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-22T00:18:00.456544" elapsed="0.041287"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-22T00:18:00.455501" elapsed="0.043393"/>
+</kw>
+<arg>xpath=//button[@type="submit" and text()="สมัครสมาชิก"]</arg>
+<status status="PASS" start="2024-10-22T00:18:00.455501" elapsed="0.043393"/>
+</kw>
+<status status="PASS" start="2024-10-22T00:17:59.887250" elapsed="0.611644"/>
+</kw>
+<kw name="Then FIT WAY should display message as &quot;Email already registered&quot;" owner="Signup" source_name="FIT WAY should display message as &quot;${expected_message}&quot;">
+<kw name="Wait until page contains element then verify text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-10-22T00:18:00.952463" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-22T00:18:00.952463" level="FAIL">Page should have contained text 'Email already registered' but did not.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2024-10-22T00:18:00.499930" elapsed="0.453538">Page should have contained text 'Email already registered' but did not.</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-10-22T00:18:02.964285" level="INFO">Current page contains text 'Email already registered'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-10-22T00:18:02.953979" elapsed="0.011322"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Page Should Contain</arg>
+<arg>${expected_text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-22T00:18:00.499930" elapsed="2.465371"/>
+</kw>
+<arg>${expected_message}</arg>
+<status status="PASS" start="2024-10-22T00:18:00.499930" elapsed="2.465371"/>
+</kw>
+<status status="PASS" start="2024-10-22T00:18:00.498894" elapsed="2.466407"/>
+</kw>
+<status status="PASS" start="2024-10-22T00:17:59.887250" elapsed="3.078051"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-22T00:18:02.967077" elapsed="2.259245"/>
+</kw>
+<status status="PASS" start="2024-10-22T00:17:51.209338" elapsed="14.016984"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Test Signup">Test Signup</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,11 @@
+signup_email: ILOVEU@gmail.com
+signup_name: Test
+signup_lastname: User
+signup_phone: 0912345678
+signup_password: Test123
+
+invalid_email: invalid@gmaill.com
+
+login_email: xtramo@gmail.com
+login_password: 1234
+
